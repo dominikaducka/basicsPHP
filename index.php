@@ -12,24 +12,7 @@
 
 <body>
     <main>
-      <!-- we use this 2 form attribiutes in order to tell our php how and where(action-> include and den to formhandler) we want to submit the data -->
-      <form action="includes/formhandler.php" method="post"> 
-        <label for="firstname">First name?</label>
-        <input type="text" name="firstname" id="firstname" placeholder="Firstname...">
-
-        <label for="lastname">Last name?</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Lastname...">
-
-        <label for="favpet">Favourite pet?</label>
-        <select id="favpet" name="favpet">
-          <option value="none">None</option>
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-          <option value="bird">Bird</option>
-          </select>
-
-        <button type="submit">Submit</button>
-      </form>
+    
     </main>
 
 </body>
