@@ -1,0 +1,16 @@
+CREATE TABLE users(
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL,
+    lastname VARCHAR(30) NOT NULL,
+    pet_id INT(11),
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIME
+);
+
+CREATE TABLE pets(
+	id INT(11) NOT NULL PRIMARY KEY,
+    petname VARCHAR(255) NOT NULL,
+    user_id INT(11) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIME,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
